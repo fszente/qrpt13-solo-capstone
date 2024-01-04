@@ -10,8 +10,8 @@ export class Frani extends BasePage {
     vanilla: By = By.xpath('(//div[@class="category-description"])[1]');
     addToBag: By = By.xpath('(//button[@*])[6]');
     findYourIhop: By = By.xpath('(//a[@class="home-features__link"])[2]');
-    zipcode: By = By.xpath('(//input[@class="ui-autocomplete-input"])[1]');
-    search: By = By.xpath('(//button[@*])[1]');
+    locationSearch: By = By.xpath('(//input[@class="ui-autocomplete-input"])[1]');
+    searchBtn: By = By.xpath('(//button[@*])[1]');
     join: By = By.xpath('(//a[@id="jsSignupNavigator"])[1]');
     email: By = By.xpath('(//input[@class="input c1a815477 c5c5d6a3a"])[1]');
     password: By = By.xpath('(//input[@class="input c1a815477 c61ad6f21"])[1]');

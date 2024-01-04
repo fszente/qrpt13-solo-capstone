@@ -1,5 +1,6 @@
 import { Frani } from "./franiPage";
 const page = new Frani(); 
+let str = '94109';
 
 
 test("Testing pause and play button", async () => {
@@ -34,9 +35,11 @@ test("Testing search bar", async () => {
     await page.navigate();
     await page.driver.sleep(2000);
     await page.click(page.findYourIhop);
-    await page.setInput(page.zipcode, '94109');
+    await page.setInput(page.locationSearch, '94109');
+    await page.click(page.searchBtn);
     await page.driver.sleep(2000);
-    await page.click(page.search);
+    console.log(str.replace(/\d{Chicago}/,''));
+    await page.click(page.searchBtn);
     await page.driver.sleep(2500);
 
 })
@@ -45,7 +48,7 @@ test("Creating an account", async () => {
     await page.navigate();
     await page.driver.sleep(2000);
     await page.click(page.join);
-    await page.setInput(page.email, 'john103@gmail.com');
+    await page.setInput(page.email, 'jack103@gmail.com');
     await page.driver.sleep(2000);
     await page.setInput(page.password, 'Freshapple1010!');
     await page.driver.sleep(2000);
