@@ -31,7 +31,7 @@ test("Adding and item to cart", async () => {
 
 })
 
-test("Testing search bar", async () => {
+test("Testing location search", async () => {
     await page.navigate();
     await page.driver.sleep(2000);
     await page.click(page.findYourIhop);
